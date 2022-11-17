@@ -1,4 +1,4 @@
-let data = [
+export const data = [
   {
     name: "Evelyn",
     assignment: "SCRUM",
@@ -3360,7 +3360,3 @@ let data = [
     fun: "3",
   },
 ];
-
-data = data.map((item, index) => ({ ...item, id: index + 1 }));
-
-console.log(data);

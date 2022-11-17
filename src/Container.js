@@ -31,7 +31,7 @@ const columns = [
   },
 ];
 
-const rows = [
+let rows = [
   {
     name: "Evelyn",
     assignment: "SCRUM",
@@ -3394,6 +3394,10 @@ const rows = [
   },
 ];
 
+rows = rows.map((item, index) => ({ ...item, id: index + 1 }));
+
+console.log(rows);
+
 export default function Container() {
   return (
     <Box sx={{ height: 400, width: "100%" }}>
@@ -3401,7 +3405,7 @@ export default function Container() {
         rows={rows}
         columns={columns}
         pageSize={5}
-        rowsPerPageOptions={[]}
+        rowsPerPageOptions={[5]}
         checkboxSelection
         disableSelectionOnClick
         experimentalFeatures={{ newEditingApi: true }}

@@ -1,4 +1,4 @@
-[
+let data = [
   {
     name: "Evelyn",
     assignment: "SCRUM",
@@ -3360,3 +3360,7 @@
     fun: "3",
   },
 ];
+
+data = data.map((item, index) => ({ ...item, id: index + 1 }));
+
+console.log(data);

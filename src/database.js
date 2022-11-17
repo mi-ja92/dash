@@ -1,4 +1,4 @@
-const database = [
+[
   {
     name: "Evelyn",
     assignment: "SCRUM",

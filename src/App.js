@@ -1,6 +1,6 @@
 import "./App.css";
 // import Papa from "papaparse";
-import Container from "./Container";
+import Container from "./components/container";
 
 function App() {
   // const changeHandler = (event) => {
@@ -25,7 +25,11 @@ function App() {
   //     />
   //   </div>
   // );
-  return <Container />;
+  return (
+    <div>
+      <Container />;
+    </div>
+  );
 }
 
 export default App;
